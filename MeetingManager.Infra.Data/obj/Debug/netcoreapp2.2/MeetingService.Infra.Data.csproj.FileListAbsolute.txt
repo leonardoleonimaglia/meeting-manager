@@ -1,0 +1,9 @@
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\bin\Debug\netcoreapp2.2\MeetingService.Infra.Data.deps.json
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\bin\Debug\netcoreapp2.2\MeetingService.Infra.Data.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\bin\Debug\netcoreapp2.2\MeetingService.Infra.Data.pdb
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.csprojAssemblyReference.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.AssemblyInfo.cs
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.Data\obj\Debug\netcoreapp2.2\MeetingService.Infra.Data.pdb

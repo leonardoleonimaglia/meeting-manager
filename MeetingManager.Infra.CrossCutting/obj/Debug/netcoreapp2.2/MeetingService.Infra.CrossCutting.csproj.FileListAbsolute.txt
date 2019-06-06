@@ -1,0 +1,9 @@
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.deps.json
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\bin\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.pdb
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.csprojAssemblyReference.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Infra.CrossCutting\obj\Debug\netcoreapp2.2\MeetingService.Infra.CrossCutting.pdb

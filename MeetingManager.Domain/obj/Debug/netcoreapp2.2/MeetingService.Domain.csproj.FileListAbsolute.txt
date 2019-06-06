@@ -1,0 +1,9 @@
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\bin\Debug\netcoreapp2.2\MeetingService.Domain.deps.json
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\bin\Debug\netcoreapp2.2\MeetingService.Domain.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\bin\Debug\netcoreapp2.2\MeetingService.Domain.pdb
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.csprojAssemblyReference.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.AssemblyInfoInputs.cache
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.AssemblyInfo.cs
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.dll
+C:\Users\lmaglia\Desktop\Projeto Meeting\MeetingManager\MeetingManager.Domain\obj\Debug\netcoreapp2.2\MeetingService.Domain.pdb
