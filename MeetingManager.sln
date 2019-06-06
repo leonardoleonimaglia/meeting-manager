@@ -3,27 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingService.Api", "MeetingManager\MeetingService.Api.csproj", "{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{F53DE60D-7D5A-414E-B5E2-337BE95A8D3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{35B2CDDC-E6B8-4293-81AB-DD84532007CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{6CB468CA-C249-4128-A767-ABFAA9C8284B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingService.Domain", "MeetingManager.Domain\MeetingService.Domain.csproj", "{CFC3C828-EBB6-4419-B1E0-09994FE77083}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{44D2D86B-046F-4ECC-B703-5E65E1A26E0E}"
+	ProjectSection(SolutionItems) = preProject
+		MeetingManager.Infra.CrossCutting\MeetingManager.Infra.CrossCutting.csproj = MeetingManager.Infra.CrossCutting\MeetingManager.Infra.CrossCutting.csproj
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{B592F313-F830-44A3-B8CB-DC6FF5A5C432}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingService.Infra.Data", "MeetingManager.Infra.Data\MeetingService.Infra.Data.csproj", "{010EAE2B-83CA-4661-BFE1-C9FF88E15979}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingService.Infra.CrossCutting", "MeetingManager.Infra.CrossCutting\MeetingService.Infra.CrossCutting.csproj", "{A4B0A956-35FB-4BBA-B71B-5B2835FD463B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{415C287B-843F-48E5-9183-826ACA726198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingService.Application", "MeetingManager.Application\MeetingService.Application.csproj", "{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Application", "MeetingManager.Application\MeetingManager.Application.csproj", "{19D0A436-7C6E-4466-9FDE-FF268294A81A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Service", "MeetingManager.Service\MeetingManager.Service.csproj", "{DBC5AF40-6DB9-4683-A948-87F73248EBD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Domain", "MeetingManager.Domain\MeetingManager.Domain.csproj", "{70AD3290-565D-43E5-9BBA-C70F1C251DB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Infra.Data", "MeetingManager.Infra.Data\MeetingManager.Infra.Data.csproj", "{4D4F897A-D25C-4B84-97AA-4599AB472818}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,38 +32,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CFC3C828-EBB6-4419-B1E0-09994FE77083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFC3C828-EBB6-4419-B1E0-09994FE77083}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFC3C828-EBB6-4419-B1E0-09994FE77083}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFC3C828-EBB6-4419-B1E0-09994FE77083}.Release|Any CPU.Build.0 = Release|Any CPU
-		{010EAE2B-83CA-4661-BFE1-C9FF88E15979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{010EAE2B-83CA-4661-BFE1-C9FF88E15979}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{010EAE2B-83CA-4661-BFE1-C9FF88E15979}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{010EAE2B-83CA-4661-BFE1-C9FF88E15979}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4B0A956-35FB-4BBA-B71B-5B2835FD463B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4B0A956-35FB-4BBA-B71B-5B2835FD463B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4B0A956-35FB-4BBA-B71B-5B2835FD463B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4B0A956-35FB-4BBA-B71B-5B2835FD463B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D0A436-7C6E-4466-9FDE-FF268294A81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D0A436-7C6E-4466-9FDE-FF268294A81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D0A436-7C6E-4466-9FDE-FF268294A81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D0A436-7C6E-4466-9FDE-FF268294A81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC5AF40-6DB9-4683-A948-87F73248EBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC5AF40-6DB9-4683-A948-87F73248EBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC5AF40-6DB9-4683-A948-87F73248EBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC5AF40-6DB9-4683-A948-87F73248EBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AD3290-565D-43E5-9BBA-C70F1C251DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AD3290-565D-43E5-9BBA-C70F1C251DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AD3290-565D-43E5-9BBA-C70F1C251DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AD3290-565D-43E5-9BBA-C70F1C251DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4F897A-D25C-4B84-97AA-4599AB472818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4F897A-D25C-4B84-97AA-4599AB472818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4F897A-D25C-4B84-97AA-4599AB472818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4F897A-D25C-4B84-97AA-4599AB472818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{171A6E99-4993-4FF9-9FB1-E4430E7ECDEF} = {F53DE60D-7D5A-414E-B5E2-337BE95A8D3B}
-		{CFC3C828-EBB6-4419-B1E0-09994FE77083} = {35B2CDDC-E6B8-4293-81AB-DD84532007CB}
 		{44D2D86B-046F-4ECC-B703-5E65E1A26E0E} = {6CB468CA-C249-4128-A767-ABFAA9C8284B}
 		{B592F313-F830-44A3-B8CB-DC6FF5A5C432} = {6CB468CA-C249-4128-A767-ABFAA9C8284B}
-		{010EAE2B-83CA-4661-BFE1-C9FF88E15979} = {B592F313-F830-44A3-B8CB-DC6FF5A5C432}
-		{A4B0A956-35FB-4BBA-B71B-5B2835FD463B} = {44D2D86B-046F-4ECC-B703-5E65E1A26E0E}
-		{31CE36B4-9DFC-4B1A-83CA-D22F4C9F8424} = {415C287B-843F-48E5-9183-826ACA726198}
+		{19D0A436-7C6E-4466-9FDE-FF268294A81A} = {415C287B-843F-48E5-9183-826ACA726198}
+		{DBC5AF40-6DB9-4683-A948-87F73248EBD7} = {F53DE60D-7D5A-414E-B5E2-337BE95A8D3B}
+		{70AD3290-565D-43E5-9BBA-C70F1C251DB9} = {35B2CDDC-E6B8-4293-81AB-DD84532007CB}
+		{4D4F897A-D25C-4B84-97AA-4599AB472818} = {B592F313-F830-44A3-B8CB-DC6FF5A5C432}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C139139-5FF2-4B87-9B9D-4ADC5E1F21B9}

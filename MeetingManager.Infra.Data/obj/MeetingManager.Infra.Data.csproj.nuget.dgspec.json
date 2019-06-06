@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-service\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj": {}
+    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-service\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj": {
+    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-service\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
         "projectName": "MeetingManager.Infra.Data",
-        "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-service\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-service\\MeetingManager.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
           "imports": [
             "net461"
           ],
