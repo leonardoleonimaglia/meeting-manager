@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj",
       "projectName": "MeetingManager.Domain",
-      "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj",
+      "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj",
       "packagesPath": "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\meeting-manager\\MeetingManager.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
