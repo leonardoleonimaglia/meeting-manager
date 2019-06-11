@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using MeetingManager.Infra.CC.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace MeetingManager.Service.Api
 {
@@ -23,9 +20,14 @@ namespace MeetingManager.Service.Api
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services
+                .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            NativeInjectorBootStrapper.RegisterServices(services);
+
+            return services.BuildCustomDependencyInjectionContainer();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +45,16 @@ namespace MeetingManager.Service.Api
 
             app.UseHttpsRedirection();
             app.UseMvc();
+        }
+    }
+
+    internal static class CustomStartupExtensionsMethods
+    {
+        public static IServiceProvider BuildCustomDependencyInjectionContainer(this IServiceCollection services)
+        {
+            var container = new ContainerBuilder();
+            container.Populate(services);
+            return new AutofacServiceProvider(container.Build());
         }
     }
 }
