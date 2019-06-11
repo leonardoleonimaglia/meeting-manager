@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MeetingManager.Infra.CC.EventBus.Ioc\MeetingManager.Infra.CC.Ioc.csproj" />
+    <ProjectReference Include="..\MeetingManager.Infra.CC.Ioc\MeetingManager.Infra.CC.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

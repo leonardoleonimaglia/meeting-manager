@@ -21,11 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Domain", "Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Infra.Data", "MeetingManager.Infra.Data\MeetingManager.Infra.Data.csproj", "{4D4F897A-D25C-4B84-97AA-4599AB472818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.Service.Api", "MeetingManager.Service.Api\MeetingManager.Service.Api.csproj", "{B081470A-6D2A-4995-9803-EC2F7C1C196F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Service.Api", "MeetingManager.Service.Api\MeetingManager.Service.Api.csproj", "{B081470A-6D2A-4995-9803-EC2F7C1C196F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.Infra.CC.EventBus", "MeetingManager.Infra.CC.EventBus\MeetingManager.Infra.CC.EventBus.csproj", "{C3997405-E870-4225-A7FA-CFCC1A33B411}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Infra.CC.EventBus", "MeetingManager.Infra.CC.EventBus\MeetingManager.Infra.CC.EventBus.csproj", "{C3997405-E870-4225-A7FA-CFCC1A33B411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.Infra.CC.Ioc", "MeetingManager.Infra.CC.EventBus.Ioc\MeetingManager.Infra.CC.Ioc.csproj", "{01461576-B17C-49B7-A476-F198EDA6FA44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Infra.CC.Ioc", "MeetingManager.Infra.CC.Ioc\MeetingManager.Infra.CC.Ioc.csproj", "{0924716A-9032-4AB0-8E45-A88A69AD2A4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{C3997405-E870-4225-A7FA-CFCC1A33B411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3997405-E870-4225-A7FA-CFCC1A33B411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3997405-E870-4225-A7FA-CFCC1A33B411}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01461576-B17C-49B7-A476-F198EDA6FA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01461576-B17C-49B7-A476-F198EDA6FA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01461576-B17C-49B7-A476-F198EDA6FA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01461576-B17C-49B7-A476-F198EDA6FA44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,7 +69,7 @@ Global
 		{4D4F897A-D25C-4B84-97AA-4599AB472818} = {B592F313-F830-44A3-B8CB-DC6FF5A5C432}
 		{B081470A-6D2A-4995-9803-EC2F7C1C196F} = {F53DE60D-7D5A-414E-B5E2-337BE95A8D3B}
 		{C3997405-E870-4225-A7FA-CFCC1A33B411} = {44D2D86B-046F-4ECC-B703-5E65E1A26E0E}
-		{01461576-B17C-49B7-A476-F198EDA6FA44} = {44D2D86B-046F-4ECC-B703-5E65E1A26E0E}
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B} = {44D2D86B-046F-4ECC-B703-5E65E1A26E0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C139139-5FF2-4B87-9B9D-4ADC5E1F21B9}
