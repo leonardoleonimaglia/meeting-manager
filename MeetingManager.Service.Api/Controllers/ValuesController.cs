@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MeetingManager.Domain.Interfaces.Repositories;
+﻿using MeetingManager.Domain.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MeetingManager.Service.Api.Controllers
 {

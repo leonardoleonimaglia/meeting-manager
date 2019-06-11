@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj": {}
+    "C:\\meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj": {
+    "C:\\meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj",
+        "projectUniqueName": "C:\\meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj",
         "projectName": "MeetingManager.Application",
-        "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj",
-        "packagesPath": "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Application\\obj\\",
+        "projectPath": "C:\\meeting-manager\\MeetingManager.Application\\MeetingManager.Application.csproj",
+        "packagesPath": "C:\\Users\\lmaglia\\.nuget\\packages\\",
+        "outputPath": "C:\\meeting-manager\\MeetingManager.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leonardo Maglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmaglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.rte.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

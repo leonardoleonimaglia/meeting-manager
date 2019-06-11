@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  meetingmanager-api:
+    image: meetingmanagerapi
+    build:
+      context: .
+      dockerfile: MeetingManager/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - '5001:80'
+    secrets:
+       - MEETINGMANAGER
+       - RABBITMQ_HOST_NAME
+       - RABBITMQ_PASSWORD
+       - RABBITMQ_USER_NAME
+    networks:
+      - mm-network    
+    logging:
+      driver: json-file
+    healthcheck:
+      test: 'curl -s https://meetingmanager-api:5001/webapi/healthcheck >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+secrets:
+  MEETINGMANAGER:
+    external: true
+  RABBITMQ_HOST_NAME:
+    external: true
+  RABBITMQ_PASSWORD:
+    external: true
+  RABBITMQ_USER_NAME:
+    external: true
+
+networks:
+  mm-network:
+    driver: bridge 
+volumes:
+  data:
+    driver: local
