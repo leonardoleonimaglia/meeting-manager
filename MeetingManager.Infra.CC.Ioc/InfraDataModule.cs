@@ -1,6 +1,8 @@
 ﻿using MeetingManager.Domain.Interfaces;
+using MeetingManager.Domain.Interfaces.Repositories;
 using MeetingManager.Infra.Data;
 using MeetingManager.Infra.Data.Factories;
+using MeetingManager.Infra.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MeetingManager.Infra.CC.Ioc
@@ -12,9 +14,7 @@ namespace MeetingManager.Infra.CC.Ioc
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUnitOfWorkFactory, UnitOfWorkFactory>();
 
-            //services.AddScoped<ICustomerRepository, CustomerRepository>();
-            //services.AddScoped<ISubsidyStatusReportRepository, SubsidyStatusReportRepository>();
-            //services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
         }
     }
 }
