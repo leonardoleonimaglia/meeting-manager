@@ -13,4 +13,8 @@
     <ProjectReference Include="..\MeetingManager.Domain\MeetingManager.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>

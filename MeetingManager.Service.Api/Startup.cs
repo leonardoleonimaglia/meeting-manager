@@ -1,5 +1,4 @@
-﻿using System;
-using Autofac;
+﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using MeetingManager.Infra.CC.Ioc;
 using Microsoft.AspNetCore.Builder;
@@ -7,11 +6,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
+using System;
 
 namespace MeetingManager.Service.Api
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,6 +26,11 @@ namespace MeetingManager.Service.Api
         {
             services
                 .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "MeetingManager API", Version = "v1" });
+            });
 
             NativeInjectorBootStrapper.RegisterServices(services);
 
@@ -45,6 +52,13 @@ namespace MeetingManager.Service.Api
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MeetingManager V1");
+            });
+
         }
     }
 
