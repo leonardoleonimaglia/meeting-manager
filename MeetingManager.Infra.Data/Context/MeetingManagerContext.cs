@@ -1,7 +1,6 @@
 ﻿using MeetingManager.Infra.Data.Configurations;
 using MeetingManager.Infra.Data.TypeConfigurations;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace MeetingManager.Infra.Data.Context
 {

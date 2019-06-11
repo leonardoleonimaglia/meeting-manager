@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{415C287B-843F-48E5-9183-826ACA726198}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Application", "MeetingManager.Application\MeetingManager.Application.csproj", "{19D0A436-7C6E-4466-9FDE-FF268294A81A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0924716A-9032-4AB0-8E45-A88A69AD2A4B} = {0924716A-9032-4AB0-8E45-A88A69AD2A4B}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingManager.Domain", "MeetingManager.Domain\MeetingManager.Domain.csproj", "{70AD3290-565D-43E5-9BBA-C70F1C251DB9}"
 EndProject
