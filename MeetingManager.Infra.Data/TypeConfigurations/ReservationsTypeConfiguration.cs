@@ -9,34 +9,34 @@ namespace MeetingManager.Infra.Data.TypeConfigurations
         public void Configure(EntityTypeBuilder<Reservations> builder)
         {
             builder
-                .ToTable("Reservations", "public");
+                .ToTable("reservations", "public");
 
             builder
                 .HasKey(x => x.Id);
 
             builder
                 .Property(e => e.Id)
-                .HasColumnName("Id")
+                .HasColumnName("id")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.WhoBooked)
-                .HasColumnName("WhoBooked")
+                .HasColumnName("Whobooked")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.MeetingRoomId)
-                .HasColumnName("MeetingRoomId")
+                .HasColumnName("meetingroomId")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.StartDate)
-                .HasColumnName("StartDate")
+                .HasColumnName("startdate")
                 .HasColumnType("date");
 
             builder
                 .Property(e => e.EndDate)
-                .HasColumnName("EndDate")
+                .HasColumnName("enddate")
                 .HasColumnType("date");
         }
     }

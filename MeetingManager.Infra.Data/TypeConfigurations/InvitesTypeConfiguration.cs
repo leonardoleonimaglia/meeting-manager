@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MeetingManager.Infra.Data.TypeConfigurations
 {
-    public class InvitedTypeConfiguration : IEntityTypeConfiguration<Invited>
+    public class InvitesTypeConfiguration : IEntityTypeConfiguration<Invites>
     {
-        public void Configure(EntityTypeBuilder<Invited> builder)
+        public void Configure(EntityTypeBuilder<Invites> builder)
         {
             builder
-                .ToTable("Invited", "public");
+                .ToTable("invited", "public");
 
             builder
                 .HasKey(e => e.ReservationId);
@@ -19,12 +19,12 @@ namespace MeetingManager.Infra.Data.TypeConfigurations
 
             builder
                 .Property(e => e.ReservationId)
-                .HasColumnName("ReservationId")
+                .HasColumnName("reservationid")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.UserId)
-                .HasColumnName("UserId")
+                .HasColumnName("userid")
                 .HasColumnType("int");
         }
     }

@@ -15,6 +15,9 @@ namespace MeetingManager.Infra.CC.Ioc
             services.AddScoped<IUnitOfWorkFactory, UnitOfWorkFactory>();
 
             services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IInvitesRepository, InvitesRepository>();
+            services.AddScoped<IMeetingRoomsRepository, MeetingRoomsRepository>();
+            services.AddScoped<IReservationsRepository, ReservationsRepository>();
         }
     }
 }

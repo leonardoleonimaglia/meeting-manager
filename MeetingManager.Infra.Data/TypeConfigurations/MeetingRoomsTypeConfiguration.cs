@@ -9,44 +9,44 @@ namespace MeetingManager.Infra.Data.TypeConfigurations
         public void Configure(EntityTypeBuilder<MeetingRooms> builder)
         {
             builder
-                .ToTable("MeetingRooms", "public");
+                .ToTable("meetingRooms", "public");
 
             builder
                 .HasKey(x => x.Id);
 
             builder
                 .Property(e => e.Id)
-                .HasColumnName("Id")
+                .HasColumnName("id")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.Name)
-                .HasColumnName("Name")
+                .HasColumnName("name")
                 .HasColumnType("varchar(40)");
 
             builder
                 .Property(e => e.Floor)
-                .HasColumnName("Floor")
+                .HasColumnName("floor")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.PeopleLimit)
-                .HasColumnName("PeopleLimit")
+                .HasColumnName("peoplelimit")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.HasTelevision)
-                .HasColumnName("Television")
+                .HasColumnName("television")
                 .HasColumnType("boolean");
 
             builder
                 .Property(e => e.HasWiredNetwork)
-                .HasColumnName("WiredNetwork")
+                .HasColumnName("wirednetwork")
                 .HasColumnType("boolean");
 
             builder
                 .Property(e => e.HasProjector)
-                .HasColumnName("Projector")
+                .HasColumnName("projector")
                 .HasColumnType("boolean");
         }
     }

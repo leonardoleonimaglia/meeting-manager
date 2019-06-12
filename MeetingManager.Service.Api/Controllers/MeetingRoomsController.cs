@@ -10,20 +10,19 @@ namespace MeetingManager.Service.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class MeetingRoomsController : ControllerBase
     {
         private readonly IUnitOfWorkFactory _unitOfWorkFactory;
-        private readonly IUsersRepository _userRepository;
+        private readonly IMeetingRoomsRepository _meetingRoomsRepository;
 
-        public ValuesController(IUnitOfWorkFactory unitOfWorkFactory,
-            IUsersRepository userRepository)
+        public MeetingRoomsController(IUnitOfWorkFactory unitOfWorkFactory,
+            IMeetingRoomsRepository meetingRoomsRepository)
         {
             _unitOfWorkFactory = unitOfWorkFactory;
-            _userRepository = userRepository;
+            _meetingRoomsRepository = meetingRoomsRepository;
         }
 
         // GET api/values
-        [HttpGet]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -36,10 +35,12 @@ namespace MeetingManager.Service.Api.Controllers
         {
             try
             {
-                using(_unitOfWorkFactory.StartUnitOfWork())
+                using (_unitOfWorkFactory.StartUnitOfWork())
                 {
-                    var user = await _userRepository.GetByIdAsync(id);
-                    return JsonConvert.SerializeObject(user);
+                    //var meetingRooms = await _meetingRoomsRepository.GetByIdAsync(id);
+                    //return JsonConvert.SerializeObject(meetingRooms);
+
+                    return string.Empty;
                 }
             }
             catch (Exception e)

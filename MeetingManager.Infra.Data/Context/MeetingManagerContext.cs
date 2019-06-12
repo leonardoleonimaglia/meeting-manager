@@ -14,7 +14,7 @@ namespace MeetingManager.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UsersTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new InvitedTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new InvitesTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MeetingRoomsTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ReservationsTypeConfiguration());
         }

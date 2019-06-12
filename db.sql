@@ -26,7 +26,7 @@ CREATE TABLE Reservations (
     EndDate DATE
 );
 
-CREATE TABLE Invited (
+CREATE TABLE Invites (
     ReservationId INTEGER REFERENCES Reservations (Id),
     UserId INTEGER REFERENCES Users (Id)
 );
