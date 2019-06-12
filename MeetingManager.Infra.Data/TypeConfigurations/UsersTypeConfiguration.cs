@@ -9,44 +9,44 @@ namespace MeetingManager.Infra.Data.TypeConfigurations
         public void Configure(EntityTypeBuilder<Users> builder)
         {
             builder
-                .ToTable("Users", "public");
+                .ToTable("users", "public");
 
             builder
                 .HasKey(x => x.Id);
 
             builder
                 .Property(e => e.Id)
-                .HasColumnName("Id")
+                .HasColumnName("id")
                 .HasColumnType("int");
 
             builder
                 .Property(e => e.FirstName)
-                .HasColumnName("FirstName")
+                .HasColumnName("firstname")
                 .HasColumnType("varchar(40)");
 
             builder
                 .Property(e => e.LastName)
-                .HasColumnName("LastName")
+                .HasColumnName("lastname")
                 .HasColumnType("varchar(40)");
 
             builder
                 .Property(e => e.Email)
-                .HasColumnName("Email")
+                .HasColumnName("email")
                 .HasColumnType("varchar(80)");
 
             builder
                 .Property(e => e.Password)
-                .HasColumnName("Password")
+                .HasColumnName("password")
                 .HasColumnType("varchar(80)");
 
             builder
                 .Property(e => e.ActivationDate)
-                .HasColumnName("ActivationDate")
+                .HasColumnName("activationdate")
                 .HasColumnType("date");
 
             builder
                 .Property(e => e.CreatedDate)
-                .HasColumnName("CreatedDate")
+                .HasColumnName("createddate")
                 .HasColumnType("date");
         }
     }

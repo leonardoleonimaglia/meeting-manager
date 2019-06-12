@@ -12,10 +12,13 @@ namespace MeetingManager.Service.Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IUnitOfWorkFactory _unitOfWorkFactory;
         private readonly IUsersRepository _userRepository;
 
-        public ValuesController(IUsersRepository userRepository)
+        public ValuesController(IUnitOfWorkFactory unitOfWorkFactory,
+            IUsersRepository userRepository)
         {
+            _unitOfWorkFactory = unitOfWorkFactory;
             _userRepository = userRepository;
         }
 
@@ -33,8 +36,11 @@ namespace MeetingManager.Service.Api.Controllers
         {
             try
             {
-                var user = await _userRepository.GetByIdAsync(id);
-                return JsonConvert.SerializeObject(user);
+                using(_unitOfWorkFactory.StartUnitOfWork())
+                {
+                    var user = await _userRepository.GetByIdAsync(id);
+                    return JsonConvert.SerializeObject(user);
+                }
             }
             catch (Exception e)
             {

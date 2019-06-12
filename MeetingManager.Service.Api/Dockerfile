@@ -5,6 +5,8 @@ EXPOSE 80
 ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+COPY ./db.sql /docker-entrypoint-initdb.d/
+
 FROM microsoft/dotnet:2.2-sdk AS build
 
 WORKDIR /src

@@ -23,13 +23,14 @@ services:
       driver: json-file
 
   db:
+    container_name: postgres
     image: postgres
+    networks:
+      - mm-network    
     environment:
-      - POSTGRES_USER=postgre
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=12345678
       - POSTGRES_DB=meetingmanager
-    volumes:
-      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
     restart: always
     ports:
       - '5432:5432'
@@ -46,7 +47,7 @@ secrets:
 
 networks:
   mm-network:
-    driver: bridge
+    external: true
 volumes:
   data:
     driver: local

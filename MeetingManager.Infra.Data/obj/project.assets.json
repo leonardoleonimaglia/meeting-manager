@@ -3787,29 +3787,30 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "MeetingManager.Domain >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.Extensions.Configuration.DockerSecrets.Unofficial >= 1.1.2",
       "Microsoft.NETCore.App >= 2.2.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.2.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\": {},
+    "C:\\Users\\lmaglia\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\lmaglia\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
       "projectName": "MeetingManager.Infra.Data",
-      "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\lmaglia\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\lmaglia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lmaglia\\meeting-manager\\MeetingManager.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Leonardo Maglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lmaglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3817,13 +3818,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.rte.com.br/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj": {
-              "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj"
+            "C:\\Users\\lmaglia\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj": {
+              "projectPath": "C:\\Users\\lmaglia\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj"
             }
           }
         }
@@ -3837,6 +3839,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.2.4, )"
+          },
           "Microsoft.Extensions.Configuration.DockerSecrets.Unofficial": {
             "target": "Package",
             "version": "[1.1.2, )"

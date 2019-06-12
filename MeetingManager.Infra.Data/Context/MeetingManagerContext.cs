@@ -1,4 +1,5 @@
-﻿using MeetingManager.Infra.Data.TypeConfigurations;
+﻿using System;
+using MeetingManager.Infra.Data.TypeConfigurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -8,7 +9,7 @@ namespace MeetingManager.Infra.Data.Context
     {
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder) => optionsBuilder
-            .UseNpgsql(GetSecret());
+            .UseNpgsql(GetConnectionString());
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,10 +19,12 @@ namespace MeetingManager.Infra.Data.Context
             modelBuilder.ApplyConfiguration(new ReservationsTypeConfiguration());
         }
 
-        private static string GetSecret()
+        private static string GetConnectionString()
         {
             var configuration = new ConfigurationBuilder().AddDockerSecrets().Build();
             var connectionString = configuration["MEETINGMANAGER"];
+
+            Console.WriteLine(connectionString);
 
             return connectionString;
         }
