@@ -12,6 +12,12 @@ namespace MeetingManager.Infra.Data.TypeConfigurations
                 .ToTable("Invited", "public");
 
             builder
+                .HasKey(e => e.ReservationId);
+
+            builder
+                .HasKey(e => e.UserId);
+
+            builder
                 .Property(e => e.ReservationId)
                 .HasColumnName("ReservationId")
                 .HasColumnType("int");

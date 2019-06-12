@@ -1,8 +1,10 @@
-﻿using MeetingManager.Domain.Interfaces.Repositories;
+﻿using System;
+using MeetingManager.Domain.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MeetingManager.Domain.Interfaces;
 
 namespace MeetingManager.Service.Api.Controllers
 {
@@ -19,6 +21,7 @@ namespace MeetingManager.Service.Api.Controllers
 
         // GET api/values
         [HttpGet]
+        [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };
@@ -28,8 +31,16 @@ namespace MeetingManager.Service.Api.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<string>> Get(int id)
         {
-            var bla = await _userRepository.GetByIdAsync(id);
-            return JsonConvert.SerializeObject(bla);
+            try
+            {
+                var user = await _userRepository.GetByIdAsync(id);
+                return JsonConvert.SerializeObject(user);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         // POST api/values

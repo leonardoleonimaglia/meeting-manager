@@ -24,11 +24,15 @@ services:
 
   db:
     image: postgres
+    environment:
+      - POSTGRES_USER=postgre
+      - POSTGRES_PASSWORD=12345678
+      - POSTGRES_DB=meetingmanager
+    volumes:
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
     restart: always
     ports:
       - '5432:5432'
-    secrets:
-      - DBPASSWORD
 
 secrets:
   MEETINGMANAGER:
@@ -39,12 +43,10 @@ secrets:
     external: true
   RABBITMQ_USER_NAME:
     external: true
-  DBPASSWORD:
-    external: true
 
 networks:
   mm-network:
-    driver: bridge 
+    driver: bridge
 volumes:
   data:
     driver: local

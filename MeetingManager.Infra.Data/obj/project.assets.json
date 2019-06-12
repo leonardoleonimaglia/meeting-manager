@@ -3793,23 +3793,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lmaglia\\.nuget\\packages\\": {},
+    "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
       "projectName": "MeetingManager.Infra.Data",
-      "projectPath": "C:\\meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\lmaglia\\.nuget\\packages\\",
-      "outputPath": "C:\\meeting-manager\\MeetingManager.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\MeetingManager.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\Leonardo Maglia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\lmaglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leonardo Maglia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3817,14 +3817,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.rte.com.br/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj": {
-              "projectPath": "C:\\meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj"
+            "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj": {
+              "projectPath": "C:\\Users\\Leonardo Maglia\\Desktop\\Projeto Meeting\\api-meeting-manager\\MeetingManager.Domain\\MeetingManager.Domain.csproj"
             }
           }
         }

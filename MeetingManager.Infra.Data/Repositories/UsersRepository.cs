@@ -17,9 +17,7 @@ namespace MeetingManager.Infra.Data.Repositories
 
         public async Task<Users> GetByIdAsync(int id) 
         {
-            var bla = await _unitOfWork.Context.Set<Users>().FirstOrDefaultAsync(x => x.Id == id);
-
-            return bla;
+            return await _unitOfWork.Context.Set<Users>().FirstOrDefaultAsync(x => x.Id == id);
         }
            
     }
