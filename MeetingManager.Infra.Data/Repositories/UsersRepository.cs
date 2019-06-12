@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using MeetingManager.Domain.Entities;
 using MeetingManager.Domain.Interfaces;
 using MeetingManager.Domain.Interfaces.Repositories;
@@ -15,10 +16,14 @@ namespace MeetingManager.Infra.Data.Repositories
             _unitOfWork = (UnitOfWork)unitOfWork;
         }
 
+        public async Task<List<Users>> GetAsync()
+        {
+            return await _unitOfWork.Context.Set<Users>().ToListAsync();
+        }
+
         public async Task<Users> GetByIdAsync(int id) 
         {
             return await _unitOfWork.Context.Set<Users>().FirstOrDefaultAsync(x => x.Id == id);
         }
-           
     }
 }
