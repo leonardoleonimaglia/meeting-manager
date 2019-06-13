@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;
 using MeetingManager.Domain.Entities;
+using Newtonsoft.Json.Linq;
 
 namespace MeetingManager.Service.Api.Controllers
 {
@@ -59,14 +60,12 @@ namespace MeetingManager.Service.Api.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Users user)
         {
             try
             {
                 using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
                 {
-                    var user = JsonConvert.DeserializeObject<Users>(value);
-
                     _userRepository.Add(user);
 
                     uow.Save();
@@ -80,15 +79,13 @@ namespace MeetingManager.Service.Api.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public void Put([FromBody] string value)
+        [HttpPut]
+        public void Put([FromBody] Users user)
         {
             try
             {
                 using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
                 {
-                    var user = JsonConvert.DeserializeObject<Users>(value);
-
                     _userRepository.Update(user);
 
                     uow.Save();

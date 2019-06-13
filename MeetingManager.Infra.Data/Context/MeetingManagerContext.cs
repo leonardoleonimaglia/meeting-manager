@@ -24,8 +24,6 @@ namespace MeetingManager.Infra.Data.Context
             var configuration = new ConfigurationBuilder().AddDockerSecrets().Build();
             var connectionString = configuration["MEETINGMANAGER"];
 
-            Console.WriteLine(connectionString);
-
             return connectionString;
         }
     }

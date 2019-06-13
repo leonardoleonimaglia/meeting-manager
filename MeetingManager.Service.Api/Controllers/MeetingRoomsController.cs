@@ -61,14 +61,12 @@ namespace MeetingManager.Service.Api.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] MeetingRooms meetingRooms)
         {
             try
             {
                 using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
                 {
-                    var meetingRooms = JsonConvert.DeserializeObject<MeetingRooms>(value);
-                    
                     _meetingRoomsRepository.Add(meetingRooms);
 
                     uow.Save();
@@ -82,15 +80,13 @@ namespace MeetingManager.Service.Api.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public void Put([FromBody] string value)
+        [HttpPut]
+        public void Put([FromBody] MeetingRooms meetingRooms)
         {
             try
             {
                 using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
                 {
-                    var meetingRooms = JsonConvert.DeserializeObject<MeetingRooms>(value);
-
                     _meetingRoomsRepository.Update(meetingRooms);
 
                     uow.Save();
