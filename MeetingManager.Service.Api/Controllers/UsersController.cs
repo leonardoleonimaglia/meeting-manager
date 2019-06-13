@@ -1,10 +1,10 @@
-﻿using System;
+﻿using MeetingManager.Domain.Interfaces;
 using MeetingManager.Domain.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System.Collections.Generic;
+using System;
 using System.Threading.Tasks;
-using MeetingManager.Domain.Interfaces;
+using MeetingManager.Domain.Entities;
 
 namespace MeetingManager.Service.Api.Controllers
 {
@@ -22,14 +22,24 @@ namespace MeetingManager.Service.Api.Controllers
             _userRepository = userRepository;
         }
 
-        // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                using (_unitOfWorkFactory.StartUnitOfWork())
+                {
+                    var allUsers = await _userRepository.GetAsync();
+                    return JsonConvert.SerializeObject(allUsers);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
         public async Task<ActionResult<string>> Get(int id)
         {
@@ -48,19 +58,50 @@ namespace MeetingManager.Service.Api.Controllers
             }
         }
 
-        // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            try
+            {
+                using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
+                {
+                    var user = JsonConvert.DeserializeObject<Users>(value);
+
+                    _userRepository.Add(user);
+
+                    uow.Save();
+                    uow.Commit();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put([FromBody] string value)
         {
+            try
+            {
+                using (var uow = _unitOfWorkFactory.StartUnitOfWorkWithTransaction())
+                {
+                    var user = JsonConvert.DeserializeObject<Users>(value);
+
+                    _userRepository.Update(user);
+
+                    uow.Save();
+                    uow.Commit();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

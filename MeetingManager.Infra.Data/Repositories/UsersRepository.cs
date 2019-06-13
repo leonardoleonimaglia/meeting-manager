@@ -25,5 +25,15 @@ namespace MeetingManager.Infra.Data.Repositories
         {
             return await _unitOfWork.Context.Set<Users>().FirstOrDefaultAsync(x => x.Id == id);
         }
+
+        public void Add(Users users)
+        {
+            _unitOfWork.Context.Set<Users>().Add(users);
+        }
+
+        public void Update(Users users)
+        {
+            _unitOfWork.Context.Set<Users>().Update(users);
+        }
     }
 }
